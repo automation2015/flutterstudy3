@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterstudy3/demo/basic_demo.dart';
 import 'model/post.dart';
 import 'demo/listview_demo.dart';
 import 'demo/hello_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
+import 'demo/layout_demo.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -60,8 +62,10 @@ class Home extends StatelessWidget{
           children: <Widget>[
             ListViewDemo(),
             //Icon(Icons.local_florist,size: 128.0,color: Colors.grey,),
-            Icon(Icons.change_history,size: 128.0,color: Colors.grey,),
-            Icon(Icons.directions_bike,size: 128.0,color: Colors.grey,),
+            BasicDemo(),
+            //Icon(Icons.change_history,size: 128.0,color: Colors.grey,),
+            LayoutDemo(),
+            //Icon(Icons.directions_bike,size: 128.0,color: Colors.grey,),
             Icon(Icons.directions_boat,size: 128.0,color: Colors.grey,),
           ],),
         drawer:Drawer(
