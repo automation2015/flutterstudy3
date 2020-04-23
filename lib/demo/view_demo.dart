@@ -18,7 +18,7 @@ class GridViewCountDemo extends StatelessWidget{
   List<Widget> _buildTiles(int length){
     return  List.generate(length, (int index){
       return Container(
-      color: Colors.grey[300],
+      color: Colors.green[300],
         alignment: Alignment(0.0,0.0),
         child: Text('Item',style: TextStyle(color:Colors.grey,fontSize: 18.0),
         ),
@@ -32,9 +32,9 @@ class GridViewCountDemo extends StatelessWidget{
       mainAxisSpacing: 16.0,
       crossAxisSpacing: 16.0,
       crossAxisCount: 3,
-      children: <Widget>[
-      
-      ],
+      children: 
+      _buildTiles(posts.length)
+      ,
       );//GridView默认是垂直滑动
   }
 }

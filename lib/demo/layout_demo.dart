@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AspectRatioDemo();
+    return StackDemo();
   }
 }
 class ConstrainedBoxDemo extends StatelessWidget{

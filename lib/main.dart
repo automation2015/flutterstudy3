@@ -70,8 +70,8 @@ class Home extends StatelessWidget{
             LayoutDemo(),
             //Icon(Icons.directions_bike,size: 128.0,color: Colors.grey,),
             //Icon(Icons.directions_boat,size: 128.0,color: Colors.grey,),
-            //ViewDemo()
-            SliverDemo()
+            ViewDemo()
+            //SliverDemo()
 
           ],),
         drawer:Drawer(
