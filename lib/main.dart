@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstudy3/demo/basic_demo.dart';
+import 'package:flutterstudy3/demo/navigator_demo.dart';
 import 'model/post.dart';
 import 'demo/listview_demo.dart';
 import 'demo/hello_demo.dart';
@@ -7,6 +8,7 @@ import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
+import 'demo/navigator_demo.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -17,10 +19,15 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/about',
+      routes: {
+        '/':(context)=>Home(),
+        '/about':(context)=>Page(title:'About')
+      },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
       //home:Home(),
-      home: Home(),
+      //home: NavigatorDemo(),
         theme: ThemeData(
           primaryColor: Colors.yellow,
           //3、设置TabBar选中时的状态：高亮颜色和水波纹
