@@ -5,6 +5,7 @@ import 'demo/listview_demo.dart';
 import 'demo/hello_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/layout_demo.dart';
+import 'demo/view_demo.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -55,7 +56,7 @@ class Home extends StatelessWidget{
               Tab(icon: Icon(Icons.local_florist),),
               Tab(icon: Icon(Icons.change_history),),
               Tab(icon: Icon(Icons.directions_bike),),
-              Tab(icon: Icon(Icons.directions_boat),)
+              Tab(icon: Icon(Icons.view_list),)
             ],),),
         //body:Hello(),
         body:TabBarView(
@@ -66,7 +67,8 @@ class Home extends StatelessWidget{
             //Icon(Icons.change_history,size: 128.0,color: Colors.grey,),
             LayoutDemo(),
             //Icon(Icons.directions_bike,size: 128.0,color: Colors.grey,),
-            Icon(Icons.directions_boat,size: 128.0,color: Colors.grey,),
+            //Icon(Icons.directions_boat,size: 128.0,color: Colors.grey,),
+            ViewDemo()
           ],),
         drawer:Drawer(
             child: ListView(
