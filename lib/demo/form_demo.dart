@@ -78,6 +78,7 @@ class _RegisteDemoState extends State<RegisterFormDemo> {
             decoration: InputDecoration(labelText: 'Username',
              helperText: ''//自动校验的信息提示
              ),
+             //保存表单数据时，执行回调，将表单数据保存给变量
             onSaved: (value) {
               username = value;
             },
