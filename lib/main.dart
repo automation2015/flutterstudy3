@@ -10,6 +10,7 @@ import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigator_demo.dart';
 import 'demo/form_demo.dart';
+import 'demo/material_componets.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -20,11 +21,12 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/form',
+      initialRoute: '/mdc',
       routes: {
         '/':(context)=>Home(),
         '/about':(context)=>Page(title:'About'),
         '/form':(context)=>FormDemo(),
+        '/mdc':(context)=>MaterialComponents(),
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
