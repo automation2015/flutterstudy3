@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutterstudy3/demo/alert_dialog_demo.dart';
 import 'package:flutterstudy3/demo/basic_demo.dart';
+import 'package:flutterstudy3/demo/bottom_sheet_demo.dart';
 import 'package:flutterstudy3/demo/navigator_demo.dart';
+import 'package:flutterstudy3/demo/snack_bar_demo.dart';
 import 'model/post.dart';
 import 'demo/listview_demo.dart';
 import 'demo/hello_demo.dart';
@@ -11,6 +14,9 @@ import 'demo/sliver_demo.dart';
 import 'demo/navigator_demo.dart';
 import 'demo/form_demo.dart';
 import 'demo/material_componets.dart';
+import 'demo/simple_dialog_demo.dart';
+import 'demo/snack_bar_demo.dart';
+import 'demo/expansion_panel_demo.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -21,12 +27,17 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/mdc',
+      initialRoute: '/expansionPanel',
       routes: {
         '/':(context)=>Home(),
         '/about':(context)=>Page(title:'About'),
         '/form':(context)=>FormDemo(),
         '/mdc':(context)=>MaterialComponents(),
+        '/simpledialog':(context)=>SimpleDialogDemo(),
+        '/alertDialog':(context)=>AlertDialogDemo(),
+        '/bottomSheet':(context)=>BottomSheetDemo(),
+        '/snackBar':(context)=>SnackBarDemo(),
+        '/expansionPanel':(context)=>ExpansionPanelDemo()
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
