@@ -4,6 +4,8 @@ import 'package:flutterstudy3/demo/basic_demo.dart';
 import 'package:flutterstudy3/demo/bottom_sheet_demo.dart';
 import 'package:flutterstudy3/demo/navigator_demo.dart';
 import 'package:flutterstudy3/demo/snack_bar_demo.dart';
+import 'demo/cart_demo.dart';
+import 'demo/stepper_demo.dart';
 import 'model/post.dart';
 import 'demo/listview_demo.dart';
 import 'demo/hello_demo.dart';
@@ -17,6 +19,9 @@ import 'demo/material_componets.dart';
 import 'demo/simple_dialog_demo.dart';
 import 'demo/snack_bar_demo.dart';
 import 'demo/expansion_panel_demo.dart';
+import 'demo/chip_demo.dart';
+import 'demo/data_table_demo.dart';
+import 'demo/paginated_data_table_demo.dart';
 /*1、TabBar：需要TabController+TabBar+TabBarView
   2、设置TabBar的样式
   3、设置TabBar选中时的状态：高亮颜色和水波纹
@@ -27,7 +32,7 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/expansionPanel',
+      initialRoute: '/stepper',
       routes: {
         '/':(context)=>Home(),
         '/about':(context)=>Page(title:'About'),
@@ -37,7 +42,12 @@ class App extends StatelessWidget{
         '/alertDialog':(context)=>AlertDialogDemo(),
         '/bottomSheet':(context)=>BottomSheetDemo(),
         '/snackBar':(context)=>SnackBarDemo(),
-        '/expansionPanel':(context)=>ExpansionPanelDemo()
+        '/expansionPanel':(context)=>ExpansionPanelDemo(),
+        '/chip':(context)=>ChipDemo(),
+        '/dataTable':(context)=>DataTableDemo(),
+        '/paginatedDataTable':(context)=>PaginatedDataTableDemo(),
+        '/card':(context)=>CardDemo(),
+        '/stepper':(context)=>StepperDemo(),
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
