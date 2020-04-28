@@ -3,11 +3,12 @@ import 'package:flutterstudy3/demo/alert_dialog_demo.dart';
 import 'package:flutterstudy3/demo/basic_demo.dart';
 import 'package:flutterstudy3/demo/bottom_sheet_demo.dart';
 import 'package:flutterstudy3/demo/navigator_demo.dart';
+import 'package:flutterstudy3/demo/rxdart/rxdart_demo.dart';
 import 'package:flutterstudy3/demo/snack_bar_demo.dart';
 import 'package:flutterstudy3/demo/state/state_management_demo.dart';
 import 'demo/card_demo.dart';
 import 'demo/stream/stream_demo.dart';
-
+import 'demo/rxdart/rxdart_demo.dart';
 import 'demo/stepper_demo.dart';
 import 'model/post.dart';
 import 'demo/listview_demo.dart';
@@ -37,7 +38,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/stream',
+      initialRoute: '/rxdart',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Page(title: 'About'),
@@ -54,7 +55,8 @@ class App extends StatelessWidget {
         '/card': (context) => CardDemo(),
         '/stepper': (context) => StepperDemo(),
         '/state_management': (context) => StateManagementDemo(),
-        '/stream':(context)=>StreamDemo(),
+        '/stream': (context) => StreamDemo(),
+        '/rxdart': (context) => RxDartDemo(),
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
