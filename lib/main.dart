@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstudy3/demo/alert_dialog_demo.dart';
 import 'package:flutterstudy3/demo/basic_demo.dart';
+import 'package:flutterstudy3/demo/bloc/bloc_demo.dart';
 import 'package:flutterstudy3/demo/bottom_sheet_demo.dart';
 import 'package:flutterstudy3/demo/navigator_demo.dart';
 import 'package:flutterstudy3/demo/rxdart/rxdart_demo.dart';
@@ -38,7 +39,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/rxdart',
+      initialRoute: '/bloc',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Page(title: 'About'),
@@ -57,6 +58,7 @@ class App extends StatelessWidget {
         '/state_management': (context) => StateManagementDemo(),
         '/stream': (context) => StreamDemo(),
         '/rxdart': (context) => RxDartDemo(),
+        '/bloc':(context)=>BlocDemo(),
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
