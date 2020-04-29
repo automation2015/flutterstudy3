@@ -8,6 +8,7 @@ import 'package:flutterstudy3/demo/rxdart/rxdart_demo.dart';
 import 'package:flutterstudy3/demo/snack_bar_demo.dart';
 import 'package:flutterstudy3/demo/state/state_management_demo.dart';
 import 'demo/card_demo.dart';
+import 'demo/http/http_demo.dart';
 import 'demo/stream/stream_demo.dart';
 import 'demo/rxdart/rxdart_demo.dart';
 import 'demo/stepper_demo.dart';
@@ -39,7 +40,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/bloc',
+      initialRoute: '/http',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Page(title: 'About'),
@@ -59,6 +60,7 @@ class App extends StatelessWidget {
         '/stream': (context) => StreamDemo(),
         '/rxdart': (context) => RxDartDemo(),
         '/bloc':(context)=>BlocDemo(),
+        '/http':(context)=>HttpDemo(),
       },
       //设置右上角debug标识
       debugShowCheckedModeBanner: false,
